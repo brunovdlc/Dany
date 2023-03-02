@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BnT</title>
+    <style>
+      .firefly {
+        animation: glow 1s ease-in-out infinite;
+      }
+      
+      @keyframes glow {
+        from {
+          opacity: 0.7;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      body {
+        background-image: url(https://u.cubeupload.com/BrunoT/e8f2.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      
+      p {
+        font-size: 20px;
+        color: #ff99;
+      }
+      
+      #data-hora {
+        font-size: 40px;
+        color: #ff99;
+        animation: Bounce 2s infinite;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      
+      @keyframes Bounce {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div style="text-align: center; margin-top: 110px;">
+      <p id="clock"></p>
+      <p id="date"></p>
+      <p>.𝐋𝐨𝐯𝐞 𝐢𝐬 𝐚 𝐣𝐨𝐮𝐫𝐧𝐞𝐲, 𝐧𝐨𝐭 𝐚 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧</p>
+    </div>
+
+    <div id="data-hora"></div>
+
+    <button id="botao">Noite</button>
+
+    <script>
+      function atualizaDataHora() {
+        var dataHora = document.getElementById("data-hora");
+        var agora = new Date();
+        dataHora.innerHTML = agora.toLocaleDateString() + "<br>" + agora.toLocaleTimeString();
+      }
+      atualizaDataHora();
+      setInterval(atualizaDataHora, 1000);
+
+      const botao = document.getElementById("botao");
+      let modoNoturno = false;
+
+      botao.addEventListener("click", function () {
+        if (!modoNoturno) {
+          document.body.classList.add("noite");
+          document.body.classList.remove("dia");
+          botao.innerHTML = "Modo Dia";
+          modoNoturno = true;
+        } else {
+          document.body.classList.add("dia");
+          document.body.classList.remove("noite");
+          botao
+// Particle object
+class Particle {
+constructor() {
+this.x = randomNumber(0, container.offsetWidth);
+this.y = container.offsetHeight + 10;
+this.speed = randomNumber(1, 5);
+this.size = randomNumber(0.5, 2.5);
+this.opacity = 1;
+this.element = document.createElement("div");
+this.element.classList.add("firework");
+this.element.style.left = this.x + "px";
+this.element.style.top = this.y + "px";
+this.element.style.width = this.size + "px";
+this.element.style.height = this.size + "px";
+this.element.style.backgroundColor = "rgba(255, 255, 255, " + this.opacity + ")";
+container.appendChild(this.element);
+}
+update() {
+this.y -= this.speed;
+this.element.style.top = this.y + "px";
+this.element.style.left = this.x + "px";
+if (this.y < 0) {
+this.remove();
+}
+}
+remove() {
+this.element.remove();
+}
+}
+
+// Function to generate particles
+function generateParticles() {
+for (let i = 0; i < numberOfParticles; i++) {
+setTimeout(() => {
+particles.push(new Particle());
+}, i * 50);
+}
+}
+
+// Function to update particles on screen
+function updateParticles() {
+particles.forEach((particle, index) => {
+particle.update();
+if (particle.y < 0) {
+particles.splice(index, 1);
+}
+});
+}
+
+// Event listeners for button
+botao.addEventListener("click", function () {
+if (!modoNoturno) {
+document.body.classList.remove("dia");
+document.body.classList.add("noite");
+botao.innerHTML = "Modo Dia";
+modoNoturno = true;
+generateParticles();
+setInterval(updateParticles, 50);
+} else {
+document.body.classList.remove("noite");
+document.body.classList.add("dia");
+botao.innerHTML = "Modo Noturno";
+modoNoturno = false;
+particles.forEach((particle) => {
+particle.remove();
+});
+particles.length = 0;
+}
+});
+
+</script>
+</body>
+</html>
+
+
+
