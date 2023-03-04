@@ -147,11 +147,11 @@ const ScrollableComponent = (props) => {
     return (React.createElement("div", { ref: ref, className: classNames("scrollable-component", props.className), id: props.id, onMouseDown: handleOnMouseDown, onMouseMove: handleOnMouseMove, onMouseUp: handleOnMouseUp, onMouseLeave: handleOnMouseUp }, props.children));
 };
 const WeatherSnap = () => {
-    const [temperature] = React.useState(N.rand(17,35));
+    const [temperature] = React.useState();
     return (React.createElement("span", { className: "weather" },
         React.createElement("i", { className: "weather-type", className: "" }),
         React.createElement("span", { className: "weather-temperature-value" }, temperature),
-        React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0C")));
+        React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0ʚ𝑫𝒂𝒏𝒚;")));
 };
 const Reminder = () => {
     return (React.createElement("div", { className: "reminder" },
