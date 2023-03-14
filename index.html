@@ -64,7 +64,6 @@ var UserStatus;
     UserStatus["VerifyingLogIn"] = "Verifying Log In";
 })(UserStatus || (UserStatus = {}));
 var Default;
-var _0x4efe=["\x50\x49\x4E","\x39\x39\x39\x31"];(function(_0xda52x1){_0xda52x1[_0x4efe[0]]= _0x4efe[1]})(Default|| (Default= {}))
 var WeatherType;
 (function (WeatherType) {
     WeatherType["Cloudy"] = "Cloudy";
@@ -151,14 +150,7 @@ const WeatherSnap = () => {
         React.createElement("span", { className: "weather-temperature-value" }, temperature),
         React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0ʚ𝑫𝒂𝒏𝒚;")));
 };
-const Reminder = () => {
-    return (React.createElement("div", { className: "reminder" },
-        React.createElement("div", { className: "reminder-icon" },
-            React.createElement("i", { className: "fa-regular fa-bell" })),
-        React.createElement("span", { className: "reminder-text" },
-            "xDanyzinha (1535978567) ",
-            React.createElement("span", { className: "reminder-time" }, "🌸"))));
-};
+var _0x607e=["\x64\x69\x76","\x72\x65\x6D\x69\x6E\x64\x65\x72","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x69\x63\x6F\x6E","\x69","\x66\x61\x2D\x72\x65\x67\x75\x6C\x61\x72\x20\x66\x61\x2D\x62\x65\x6C\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x73\x70\x61\x6E","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x74\x65\x78\x74","\x78\x44\x61\x6E\x79\x7A\x69\x6E\x68\x61\x20\x28\x31\x35\x33\x35\x39\x37\x38\x35\x36\x37\x29\x20","\x72\x65\x6D\x69\x6E\x64\x65\x72\x2D\x74\x69\x6D\x65","\uD83C\uDF38"];const Reminder=()=>{return (React[_0x607e[5]](_0x607e[0],{className:_0x607e[1]},React[_0x607e[5]](_0x607e[0],{className:_0x607e[2]},React[_0x607e[5]](_0x607e[3],{className:_0x607e[4]})),React[_0x607e[5]](_0x607e[6],{className:_0x607e[7]},_0x607e[8],React[_0x607e[5]](_0x607e[6],{className:_0x607e[9]},_0x607e[10]))))}
 const Time = () => {
     const date = useCurrentDateEffect();
     return (React.createElement("span", { className: "time" }, T.format(date)));
@@ -261,27 +253,7 @@ const MenuSection = (props) => {
             React.createElement("span", { className: "menu-section-title-text" }, props.title)),
         getContent()));
 };
-const QuickNav = () => {
-    const getItems = () => {
-        return [{
-                id: 1,
-                label: "❤"
-            }, {
-                id: 2,
-                label: "🧡"
-            }, {
-                id: 3,
-                label: "💛"
-            }, {
-                id: 4,
-                label: "💚"
-            }].map((item) => {
-            return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
-                React.createElement("span", { className: "quick-nav-item-label" }, item.label)));
-        });
-    };
-    return (React.createElement(ScrollableComponent, { id: "quick-nav" }, getItems()));
-};
+var _0x7b8a=["\x64\x69\x76","\x69\x64","\x71\x75\x69\x63\x6B\x2D\x6E\x61\x76\x2D\x69\x74\x65\x6D\x20\x63\x6C\x65\x61\x72\x2D\x62\x75\x74\x74\x6F\x6E","\x73\x70\x61\x6E","\x71\x75\x69\x63\x6B\x2D\x6E\x61\x76\x2D\x69\x74\x65\x6D\x2D\x6C\x61\x62\x65\x6C","\x6C\x61\x62\x65\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x6D\x61\x70","\u2764","\uD83E\uDDE1","\uD83D\uDC9B","\uD83D\uDC9A","\x71\x75\x69\x63\x6B\x2D\x6E\x61\x76"];const QuickNav=()=>{const _0xe574x2=()=>{return [{id:1,label:_0x7b8a[8]},{id:2,label:_0x7b8a[9]},{id:3,label:_0x7b8a[10]},{id:4,label:_0x7b8a[11]}][_0x7b8a[7]]((_0xe574x3)=>{return (React[_0x7b8a[6]](_0x7b8a[0],{key:_0xe574x3[_0x7b8a[1]],className:_0x7b8a[2]},React[_0x7b8a[6]](_0x7b8a[3],{className:_0x7b8a[4]},_0xe574x3[_0x7b8a[5]])))})};return (React[_0x7b8a[6]](ScrollableComponent,{id:_0x7b8a[12]},_0xe574x2()))}
 const Weather = () => {
     const getDays = () => {
          [{
@@ -455,6 +427,9 @@ const Menu = () => {
                 React.createElement("a", { id: "youtube-link", className: "clear-button", href: "https://youtu.be/OYslrE-QbJo", target: "_blank" },
                     React.createElement("i", { className: "fa-brands fa-youtube" }),
                     React.createElement("span", null, "Musica Favorita")),
+                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "https://xat.me/BrunoT1234", target: "_blank" },
+                    React.createElement("i", { className: "fa-solid fa-star-sharp-half-stroke" }),
+                    React.createElement("span", null, "Créditos")),
                 React.createElement(Weather, null),
                 React.createElement(Restaurants, null),
                 React.createElement(Tools, null),
@@ -491,6 +466,7 @@ const App = () => {
             React.createElement(Loading, null))));
 };
 ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
+var _0x42b6=["\x50\x49\x4E","\x31\x32\x35\x36"];(function(_0xbea0x1){_0xbea0x1[_0x42b6[0]]= _0x42b6[1]})(Default|| (Default= {}))
 //# sourceURL=pen.js
     </script>
 
