@@ -748,3 +748,36 @@ body input, body h1, body h3, body a, body span {
 .fa-music {
   color: red;
 }
+#container {
+  overflow:hidden;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  background:-o-linear-gradient(top, #000, #03314A);
+  background:-ms-linear-gradient(top, #000, #03314A);
+  background:-moz-linear-gradient(top, #000, #03314A);
+  background:-webkit-linear-gradient(top, #000, #03314A);
+  background:linear-gradient(top, #000, #257eb7);    
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#03314A');
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#03314A')";
+}
+
+
+#pixie {
+  z-index:10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.HCJ { 
+   position: absolute; 
+   top: 300px; 
+   left: 400px;
+   color: red;
+   height: 250px;
+   width: 700px;
+}
+
+
