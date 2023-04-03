@@ -710,12 +710,15 @@ body input, body h1, body h3, body a, body span {
 }
 .toggle-play,
 .toggle-play i {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(180deg);
 }
 
 .toggle-play {
@@ -725,15 +728,15 @@ body input, body h1, body h3, body a, body span {
   z-index: 12000;
   border: none;
   outline: none;
-  background: var(--border);
+  background: none;
   color: var(--light);
-  box-shadow: 0 0 0 5px #ffffff, 0 0 30px rgba(0, 0, 0, .2);
+  box-shadow: none;
   transition: .2s;
 }
 
 .toggle-play:hover {
   color: var(--shadow);
-  box-shadow: 0 0 0 10px #000000, 0 0 30px rgba(0, 0, 0, .2);
+  border-right: 30px solid var(--shadow);
   cursor: pointer;
 }
 
@@ -741,13 +744,15 @@ body input, body h1, body h3, body a, body span {
   font-size: 24px;
   color: white;
 }
+
 .fa {
   font-size: 24px;
 }
 
-.fa-music {
-  color: red;
+#sound:before {
+  content: "";
 }
+
 #container {
   overflow:hidden;
   position:absolute;
